@@ -1,7 +1,10 @@
 export function buildPrompt(
-  context:string,
-  question:string
-){
+  context: string,
+  question: string
+): Array<{
+  role: "system" | "user" | "assistant";
+  content: string;
+}> {
 
 return [
 {
