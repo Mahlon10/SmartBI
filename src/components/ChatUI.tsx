@@ -153,6 +153,15 @@ export default function ChatUI() {
           height: 140px;
           position: relative;
         }
+        .chat-input::placeholder {
+  color: #555555;
+  opacity: 1;
+}
+
+.chat-input {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
 
         @media (max-width: 768px) {
           .logoContainer {
