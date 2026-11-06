@@ -83,7 +83,8 @@ export default function ChatUI() {
               lineHeight: 1.75,
               resize: 'vertical',
               outline: 'none',
-              background: '#000000',
+              background: '#ededed',
+              color: '#000000'
               fontFamily: montserrat.style.fontFamily,
             }}
           />
