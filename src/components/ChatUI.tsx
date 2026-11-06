@@ -69,24 +69,27 @@ export default function ChatUI() {
         </div>
 
         <div style={{ marginTop: 30, display: 'flex', flexDirection: 'column', gap: 18 }}>
-          <textarea
-            value={input}
-            onChange={e => setInput(e.target.value)}
-            placeholder="Type your prompt eg. (list my services etc.)"
-            rows={5}
-            style={{
-              width: '100%',
-              borderRadius: 24,
-              border: '1px solid #d1d5db',
-              padding: '18px 20px',
-              fontSize: 16,
-              lineHeight: 1.75,
-              resize: 'vertical',
-              outline: 'none',
-              background: '#ededed',          
-              fontFamily: montserrat.style.fontFamily,
-            }}
-          />
+         <textarea
+  value={input}
+  onChange={e => setInput(e.target.value)}
+  placeholder="Type your prompt eg. (list my services etc.)"
+  rows={5}
+  style={{
+    width: '100%',
+    borderRadius: 24,
+    border: '1px solid #d1d5db',
+    padding: '18px 20px',
+    fontSize: 16,
+    lineHeight: 1.75,
+    resize: 'vertical',
+    outline: 'none',
+    background: '#ffffff',
+    color: '#000000',
+    caretColor: '#000000',
+    fontFamily: montserrat.style.fontFamily,
+  }}
+  className="chat-input"
+/>
           <button
             onClick={sendMessage}
             disabled={isSending}
